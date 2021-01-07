@@ -42,7 +42,8 @@ defmodule Roveronline.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:rover, path: "../Rover"}
+      {:rover, path: "../Rover"},
+      {:credo, "~> 1.5", only: [:dev, :test], runtime: false}
     ]
   end
 
