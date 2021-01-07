@@ -1,4 +1,7 @@
 defmodule RoveronlineWeb.Telemetry do
+  @moduledoc """
+  To emit events at regular intervals to aggregate metrics.
+  """
   use Supervisor
   import Telemetry.Metrics
 

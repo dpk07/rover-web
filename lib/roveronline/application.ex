@@ -8,7 +8,7 @@ defmodule Roveronline.Application do
   def start(_type, _args) do
     children = [
       # Start the Rover Server
-      {Rover.Server, {10000, 10000}},
+      {Rover.Server, {10_000, 10_000}},
       # Start the Telemetry supervisor
       RoveronlineWeb.Telemetry,
       # Start the PubSub system
