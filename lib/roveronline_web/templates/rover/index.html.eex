@@ -24,7 +24,7 @@ let handleFormSubmit = () => {
     const CSRF_TOKEN = document.querySelector('meta[name="csrf-token"]').content
     direction = document.getElementById("direction_dropdown").value
     steps = document.getElementById("steps").value
-    fetch("/rover", {
+    fetch("/", {
         method: "POST",
         headers: [
             ["Content-Type", "application/json"],

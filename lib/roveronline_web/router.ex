@@ -16,9 +16,8 @@ defmodule RoveronlineWeb.Router do
   scope "/", RoveronlineWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
-    get "/rover", RoverController, :index
-    post "/rover", RoverController, :move
+    get "/", RoverController, :index
+    post "/", RoverController, :move
   end
 
   # Other scopes may use custom stacks.
