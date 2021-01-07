@@ -22,7 +22,6 @@ defmodule RoveronlineWeb.RoverControllerTest do
   end
 
   test "POST /rover moving outside the grid", %{conn: conn} do
-    IO.inspect(Rover.Server.get_current_state())
     conn = post(conn, Routes.rover_path(conn, :move), direction: "L", steps: "10000")
     assert "Rover cannot move outside the grid." = response(conn, 400)
   end

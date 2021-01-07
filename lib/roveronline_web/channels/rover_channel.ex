@@ -1,4 +1,7 @@
 defmodule RoveronlineWeb.RoverChannel do
+  @moduledoc """
+  This is the channel which handles all the sockets related to rover channel.
+  """
   use Phoenix.Channel
 
   def join("rover:lobby", _message, socket) do
